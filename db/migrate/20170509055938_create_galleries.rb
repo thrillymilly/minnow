@@ -4,7 +4,7 @@ class CreateGalleries < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :location
       t.string :hours
-      t.number :phone
+      t.integer :phone
       t.string :image_url
 
       t.timestamps
