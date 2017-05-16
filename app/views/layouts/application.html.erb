@@ -2,24 +2,31 @@
 <html>
   <head>
     <title>Minnow</title>
+    <%= google_webfonts_init({ google: ['Nunito', 'Oxygen'] }) %>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <header>
-    
-    <h1>MINNOW.</h1>
-
-    <nav>
-      <a href="Galleries"></a>
-      <a href="Events"></a>
-      <a href="Log in"></a>
-    </nav>
-
-  </header>
-
   <body>
+    <header>
+      <div class="top-head">
+        <h1>MINNOW.</h1>
+        <div class="sign-in">
+          <span>login</span>
+          <span>sign-up</span>
+        </div>
+      </div>
+
+      <nav>
+        <div class="">
+          <a href="shows">SHOWS</a>
+          <a href="Galleries">GALLERIES</a>
+          <a href="Events">EVENTS</a>
+        </div>
+      </nav>
+
+
+    </header>
     <%= yield %>
   </body>
 </html>

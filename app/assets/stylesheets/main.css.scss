@@ -1,0 +1,48 @@
+// colors
+$text-color: #231f20;
+$line-color: lightgrey;
+
+// spacing
+$minimum-side-offset: 14px;
+$standard-side-offset: 14px;
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+  color: $text-color;
+  border-bottom: 1px solid $line-color;
+  text-align: center;
+}
+
+header {
+  font-family: 'Nunito', sans-serif;
+}
+
+nav {
+  font-size: 1em;
+  color: $text-color;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid $line-color;
+  padding: .5em .5em;
+}
+
+nav a {
+  padding-left: $standard-side-offset;
+  padding-right: $standard-side-offset;
+}
+
+.sign-in {
+  display: inline-block;
+  position: absolute;
+  top: .5em;
+  right: 0;
+  color: $text-color;
+}
+
+.sign-in span {
+  padding-right: $minimum-side-offset;
+}
